@@ -18,9 +18,10 @@ const config = {
 router.get('/', (req, res) => {
     //Cambiar el query por procedures
         new sql.ConnectionPool(config).connect().then( pool => {
-        return pool.query`select * from Alarms`;
+        return pool.query`select * from ConsumoKWH$`;
     }).then(result => {
-        res.send(result.recordsets[0].filter(item => item.Alarm_type == "Operator intervention").length);
+        // res.send(result.recordsets[0].filter(item => item.Alarm_type == "Operator intervention").length);
+        res.send(result.recordsets[0]);
     }).catch(err => console.log(`Error -> ${err}`));
 });
 

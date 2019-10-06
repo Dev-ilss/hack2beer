@@ -18,10 +18,10 @@ export default function Home() {
           <Col sm="12" md={{size:4}}>
             <PrimeItem servicio={"Agua"} width={"7em"} icon={waterOutline} color={"#28C8DE"} />
           </Col>
-          <Col m="12" md={{size:4}}>
+          <Col sm="12" md={{size:4}}>
             <PrimeItem servicio={"Gas"} width={"7em"} icon={fireOutline} color={"#E94F37"} />
           </Col>
-          <Col m="12" md={{size:4}}>
+          <Col sm="12" md={{size:4}}>
             <PrimeItem servicio={"Energia electrica"} width={"7em"} icon={flashIcon} color={"#EBD31D"} />
           </Col>
         </Row>
