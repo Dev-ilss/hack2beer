@@ -1,0 +1,12 @@
+{
+    "mssqlURI":{
+    "user": "devils",
+    "password": "AlkalinaTID41M",
+    "server": "devils.database.windows.net",
+    "database": "devils",
+    "port": "1433",
+    "options": {
+        "encrypt": true
+    }
+} 
+}
