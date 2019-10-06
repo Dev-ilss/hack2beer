@@ -4,8 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node server.js"
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -19,12 +22,13 @@
   },
   "homepage": "https://github.com/Dev-ilss/hack2beer#readme",
   "dependencies": {
-    "concurrently": "^4.1.2",
-    "config": "^3.2.3"
-  },
-  "devDependencies": {
     "body-parser": "^1.19.0",
+    "concurrently": "^4.1.2",
+    "config": "^3.2.3",
     "express": "^4.17.1",
     "mssql": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
   }
 }
