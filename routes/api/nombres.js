@@ -20,8 +20,7 @@ router.get('/', (req, res) => {
         new sql.ConnectionPool(config).connect().then( pool => {
         return pool.query`select * from ConsumoKWH$`;
     }).then(result => {
-        // res.send(result.recordsets[0].filter(item => item.Alarm_type == "Operator intervention").length);
-        res.send(result.recordsets[0]);
+        res.send(result);
     }).catch(err => console.log(`Error -> ${err}`));
 });
 

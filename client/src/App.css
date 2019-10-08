@@ -64,3 +64,37 @@ a, a:hover{
 .primeItem:hover .primeItem__titulo{
     opacity: 1;
 }
+
+.parrafoChart{
+    font-size: 2rem;
+    margin: 2rem 0;
+    width: 90%;
+}
+
+h2.actual{
+    margin: 3rem 0;
+    font-size: 9rem;
+}
+h2.actual span{
+    font-size: 4rem;
+    display: block;
+}
+
+h4.ayer,h4.semana{
+    font-size: 4rem;
+}
+h4.ayer .span, h4.semana .span{
+    display: block;
+    font-size: 2rem;
+}
+.container__datos{
+    margin-left: 2rem;
+    text-align: left;
+}
+
+.rojo{
+    color: #E94F37;
+}
+.verde{
+    color: #12670A;
+}
